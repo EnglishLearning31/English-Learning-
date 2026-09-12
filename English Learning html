@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn British English</title>
+    <style>
+        :root {
+            --primary: #1d3557;
+            --secondary: #457b9d;
+            --accent: #e63946;
+            --light: #f1faee;
+            --dark: #1d3557;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        header p {
+            margin-top: 0.5rem;
+            opacity: 0.9;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: var(--secondary);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav a {
+            color: white;
+            padding: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 8px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .card h2 {
+            color: var(--primary);
+            margin-top: 0;
+        }
+
+        .translation {
+            color: #6c757d;
+            font-style: italic;
+            font-size: 0.95rem;
+            margin-top: -0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .vocab-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .vocab-item {
+            background: var(--light);
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--secondary);
+        }
+
+        audio {
+            width: 100%;
+            margin-top: 0.5rem;
+        }
+
+        .quiz-btn {
+            background-color: var(--accent);
+            color: white;
+            border: none;
+            padding: 0.75rem 1.5rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            font-size: 1rem;
+        }
+
+        .quiz-btn:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Learn British English</h1>
+        <p>Welcome! Step-by-step English lessons made for you.</p>
+    </header>
+
+    <nav>
+        <a href="#level1">Level 1: Beginner</a>
+        <a href="#level2">Level 2: Intermediate</a>
+        <a href="#level3">Level 3: Advanced</a>
+    </nav>
+
+    <div class="container">
+
+        <!-- LEVEL 1 SECTION -->
+        <section id="level1">
+            <div class="card">
+                <h2>Lesson 1: Greetings & Basic Words</h2>
+                <div class="translation">سلام و احوالپرسی / سلامونه او روغبړ</div>
+                
+                <p>Listen to the pronunciations below and practice repeating them out loud:</p>
+
+                <div class="vocab-grid">
+                    <div class="vocab-item">
+                        <strong>Hello</strong>
+                        <div style="font-size: 0.85rem; color: #555;">(General Greeting)</div>
+                        <!-- You can upload audio files later -->
+                        <audio controls>
+                            <source src="audio/hello.mp3" type="audio/mpeg">
+                            Your browser does not support audio.
+                        </audio>
+                    </div>
+
+                    <div class="vocab-item">
+                        <strong>Good morning</strong>
+                        <div style="font-size: 0.85rem; color: #555;">(Used before 12 PM)</div>
+                        <audio controls>
+                            <source src="audio/good-morning.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+
+                    <div class="vocab-item">
+                        <strong>How are you?</strong>
+                        <div style="font-size: 0.85rem; color: #555;">(Common question)</div>
+                        <audio controls>
+                            <source src="audio/how-are-you.mp3" type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>Practice & Quiz</h2>
+                <p>What is the correct response to <em>"How are you?"</em></p>
+                <button class="quiz-btn" onclick="alert('Correct! Standard response: I am fine, thank you!')">
+                    Click to Check Answer
+                </button>
+            </div>
+        </section>
+
+        <!-- LEVEL 2 SECTION -->
+        <section id="level2" style="margin-top: 3rem;">
+            <div class="card">
+                <h2>Level 2: Everyday Conversations</h2>
+                <p>Coming soon! Here we will cover asking for directions, shopping, and everyday UK phrases.</p>
+            </div>
+        </section>
+
+        <!-- LEVEL 3 SECTION -->
+        <section id="level3" style="margin-top: 3rem;">
+            <div class="card">
+                <h2>Level 3: Intermediate & Grammar</h2>
+                <p>Coming soon! We will cover reading passages, writing emails, and intermediate tenses.</p>
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        <p>Made with ❤️ for my family in Afghanistan.</p>
+    </footer>
+
+</body>
+</html>
