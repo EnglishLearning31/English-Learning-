@@ -14,6 +14,8 @@
     .container { max-width: 600px; margin: 20px auto; padding: 0 15px; }
     .card { background: white; border-radius: 8px; padding: 15px 20px; margin-bottom: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-left: 5px solid #2b6cb0; }
     .card h3 { margin: 0 0 5px 0; color: #1a365d; font-size: 18px; }
+    .card .explanation { background-color: #edf2f7; padding: 10px; border-radius: 6px; margin-bottom: 10px; font-size: 13px; color: #2d3748; }
+    .card .explanation p { margin: 3px 0; }
     .card .translation { direction: rtl; color: #4a5568; font-weight: bold; margin-bottom: 12px; font-size: 16px; }
     .listen-btn { background-color: #2b6cb0; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-weight: bold; cursor: pointer; font-size: 13px; display: inline-flex; align-items: center; gap: 6px; }
     .listen-btn:active { background-color: #1a365d; }
@@ -25,7 +27,7 @@
 
   <header>
     <h1>Learn British English</h1>
-    <p>Lessons 1 - 10 (English & Pashto)</p>
+    <p>Lessons 1 - 10 & Grammar (English & Pashto)</p>
   </header>
 
   <nav>
@@ -39,6 +41,7 @@
     <a href="#lesson8">L8: Body Parts</a>
     <a href="#lesson9">L9: Places</a>
     <a href="#lesson10">L10: Verbs</a>
+    <a href="#tenses">Grammar: Tenses</a>
   </nav>
 
   <div class="container">
@@ -281,6 +284,159 @@
       <h3>Hand</h3>
       <p class="translation">لاس</p>
       <button class="listen-btn" onclick="speak('Hand')">🔊 Listen</button>
+    </div>
+
+    <!-- LESSON 9 -->
+    <h2 id="lesson9">Lesson 9: Common Places</h2>
+    <p class="subtext">عام ځایونه</p>
+
+    <div class="card">
+      <h3>Home</h3>
+      <p class="translation">کور</p>
+      <button class="listen-btn" onclick="speak('Home')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>School</h3>
+      <p class="translation">ښوونځی</p>
+      <button class="listen-btn" onclick="speak('School')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Hospital</h3>
+      <p class="translation">روغتون</p>
+      <button class="listen-btn" onclick="speak('Hospital')">🔊 Listen</button>
+    </div>
+
+    <!-- LESSON 10 -->
+    <h2 id="lesson10">Lesson 10: Basic Action Verbs</h2>
+    <p class="subtext">لومړني افعال</p>
+
+    <div class="card">
+      <h3>Eat</h3>
+      <p class="translation">خوړل</p>
+      <button class="listen-btn" onclick="speak('Eat')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Drink</h3>
+      <p class="translation">څښل</p>
+      <button class="listen-btn" onclick="speak('Drink')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Sleep</h3>
+      <p class="translation">وېده کېدل</p>
+      <button class="listen-btn" onclick="speak('Sleep')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Go</h3>
+      <p class="translation">تلل</p>
+      <button class="listen-btn" onclick="speak('Go')">🔊 Listen</button>
+    </div>
+
+    <!-- TENSES SECTION -->
+    <h2 id="tenses">English Tenses (زمانې)</h2>
+    <p class="subtext">د انګلیسي ژبې زمانې او د هغوی کارول</p>
+
+    <!-- PRESENT TENSE -->
+    <div class="card">
+      <h3>1. Present Simple Tense (حاله زمانه)</h3>
+      <div class="explanation">
+        <p><strong>When to use:</strong> For things happening now or daily habits/routines.</p>
+        <p style="direction: rtl;"><strong>کارول:</strong> د هغو کارونو لپاره چې روزمره ترسره کېږي یا عادت وي.</p>
+      </div>
+      <h3>I eat bread every day.</h3>
+      <p class="translation">زه هره ورځ ډوډۍ خورم.</p>
+      <button class="listen-btn" onclick="speak('I eat bread every day.')">🔊 Listen</button>
+    </div>
+
+    <div class="card">
+      <h3>I go to school.</h3>
+      <div class="explanation">
+        <p><strong>Present habit:</strong> Shows a regular action in the present.</p>
+        <p style="direction: rtl;"><strong>عادت:</strong> د اوسني وخت منظم کار ښيي.</p>
+      </div>
+      <p class="translation">زه ښوونځي ته ځم.</p>
+      <button class="listen-btn" onclick="speak('I go to school.')">🔊 Listen</button>
+    </div>
+
+    <!-- PAST TENSE -->
+    <div class="card">
+      <h3>2. Past Simple Tense (تېره زمانه)</h3>
+      <div class="explanation">
+        <p><strong>When to use:</strong> For actions that happened and finished in the past (yesterday, before, etc.).</p>
+        <p style="direction: rtl;"><strong>کارول:</strong> د هغو کارونو لپاره چې په تېر وخت کې بشپړ شوي وي (تېره ورځ، پخوا).</p>
+      </div>
+      <h3>I ate bread yesterday.</h3>
+      <p class="translation">ما پرون ډوډۍ وخواړه.</p>
+      <button class="listen-btn" onclick="speak('I ate bread yesterday.')">🔊 Listen</button>
+    </div>
+
+    <div class="card">
+      <h3>I went to school.</h3>
+      <div class="explanation">
+        <p><strong>Completed Action:</strong> Using the past form of 'go' (went).</p>
+        <p style="direction: rtl;"><strong>تېر شوی کار:</strong> د 'go' تېره بڼه (went) کارول کېږي.</p>
+      </div>
+      <p class="translation">زه ښوونځي ته ولاړم.</p>
+      <button class="listen-btn" onclick="speak('I went to school.')">🔊 Listen</button>
+    </div>
+
+    <!-- FUTURE TENSE -->
+    <div class="card">
+      <h3>3. Future Simple Tense (راتلونکې زمانه)</h3>
+      <div class="explanation">
+        <p><strong>When to use:</strong> For actions that will happen later or tomorrow. Use "will" before the verb.</p>
+        <p style="direction: rtl;"><strong>کارول:</strong> د هغو کارونو لپاره چې په راتلونکي یا سبا کې ترسره کېږي. له فعل څخه مخکې "will" کارول کېږي.</p>
+      </div>
+      <h3>I will eat bread tomorrow.</h3>
+      <p class="translation">زه به سبا ډوډۍ وخورم.</p>
+      <button class="listen-btn" onclick="speak('I will eat bread tomorrow.')">🔊 Listen</button>
+    </div>
+
+    <div class="card">
+      <h3>I will go to school.</h3>
+      <div class="explanation">
+        <p><strong>Future Plan:</strong> Using 'will go' for upcoming plans.</p>
+        <p style="direction: rtl;"><strong>راتلونکی پلان:</strong> د راځېدونکو پلانونو لپاره 'will go' کارول کېږي.</p>
+      </div>
+      <p class="translation">زه به ښوونځي ته ولاړ شم.</p>
+      <button class="listen-btn" onclick="speak('I will go to school.')">🔊 Listen</button>
+    </div>
+
+  </div>
+
+  <script>
+    let voices = [];
+    function loadVoices() {
+      voices = window.speechSynthesis.getVoices();
+    }
+    if ('speechSynthesis' in window) {
+      loadVoices();
+      window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+
+    function speak(text) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.rate = 0.85;
+        
+        const englishVoice = voices.find(v => v.lang.includes('en'));
+        if (englishVoice) {
+          utterance.voice = englishVoice;
+        } else {
+          utterance.lang = 'en-GB';
+        }
+
+        window.speechSynthesis.speak(utterance);
+      } else {
+        alert('Browser speech unavailable.');
+      }
+    }
+  </script>
+
+</body>
+</html>
+  <button class="listen-btn" onclick="speak('Hand')">🔊 Listen</button>
     </div>
 
     <!-- LESSON 9 -->
