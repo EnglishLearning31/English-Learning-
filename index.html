@@ -6,65 +6,307 @@
   <title>Learn British English</title>
   <style>
     body { font-family: Arial, sans-serif; background-color: #f4f7f6; margin: 0; padding: 0; color: #333; }
-    header { background-color: #1a365d; color: white; text-align: center; padding: 25px 15px; }
-    header h1 { margin: 0; font-size: 26px; }
-    header p { margin-top: 8px; opacity: 0.9; }
-    nav { display: flex; background-color: #2b6cb0; text-align: center; }
-    nav a { flex: 1; color: white; padding: 12px; text-decoration: none; font-weight: bold; font-size: 14px; }
+    header { background-color: #1a365d; color: white; text-align: center; padding: 25px 15px; position: sticky; top: 0; z-index: 100; }
+    header h1 { margin: 0; font-size: 24px; }
+    header p { margin-top: 5px; opacity: 0.9; font-size: 14px; }
+    nav { display: flex; overflow-x: auto; background-color: #2b6cb0; padding: 5px 0; white-space: nowrap; }
+    nav a { color: white; padding: 10px 15px; text-decoration: none; font-weight: bold; font-size: 13px; display: inline-block; }
     .container { max-width: 600px; margin: 20px auto; padding: 0 15px; }
-    .card { background: white; border-radius: 8px; padding: 20px; margin-bottom: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-left: 5px solid #2b6cb0; }
-    .card h3 { margin: 0 0 5px 0; color: #1a365d; }
-    .card p { margin: 0 0 15px 0; color: #666; font-size: 14px; }
-    .listen-btn { background-color: #2b6cb0; color: white; border: none; padding: 10px 18px; border-radius: 20px; font-weight: bold; cursor: pointer; font-size: 14px; display: inline-flex; align-items: center; gap: 8px; }
+    .card { background: white; border-radius: 8px; padding: 15px 20px; margin-bottom: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); border-left: 5px solid #2b6cb0; }
+    .card h3 { margin: 0 0 5px 0; color: #1a365d; font-size: 18px; }
+    .card .translation { direction: rtl; color: #4a5568; font-weight: bold; margin-bottom: 12px; font-size: 16px; }
+    .listen-btn { background-color: #2b6cb0; color: white; border: none; padding: 8px 16px; border-radius: 20px; font-weight: bold; cursor: pointer; font-size: 13px; display: inline-flex; align-items: center; gap: 6px; }
     .listen-btn:active { background-color: #1a365d; }
+    h2 { color: #1a365d; border-bottom: 2px solid #2b6cb0; padding-bottom: 5px; margin-top: 35px; font-size: 20px; }
+    .subtext { direction: rtl; color: #666; font-size: 14px; margin-top: -5px; margin-bottom: 15px; }
   </style>
 </head>
 <body>
 
   <header>
     <h1>Learn British English</h1>
-    <p>Welcome! Step-by-step English lessons made for you.</p>
+    <p>Lessons 1 - 10 (English & Pashto)</p>
   </header>
 
   <nav>
-    <a href="#">Level 1: Beginner</a>
-    <a href="#">Level 2: Intermediate</a>
-    <a href="#">Level 3: Advanced</a>
+    <a href="#lesson1">L1: Greetings</a>
+    <a href="#lesson2">L2: Numbers</a>
+    <a href="#lesson3">L3: Family</a>
+    <a href="#lesson4">L4: Colors</a>
+    <a href="#lesson5">L5: Food & Water</a>
+    <a href="#lesson6">L6: Questions</a>
+    <a href="#lesson7">L7: Time & Days</a>
+    <a href="#lesson8">L8: Body Parts</a>
+    <a href="#lesson9">L9: Places</a>
+    <a href="#lesson10">L10: Verbs</a>
   </nav>
 
   <div class="container">
-    <h2>Lesson 1: Greetings & Basic Words</h2>
-    <p style="direction: rtl; color: #555;">سلام و احوالپرسی / سلامونه او روغبړ</p>
-    <p>Tap the button below each word to hear the pronunciation out loud:</p>
+    
+    <!-- LESSON 1 -->
+    <h2 id="lesson1">Lesson 1: Greetings & Basic Words</h2>
+    <p class="subtext">سلامونه او روغبړ</p>
 
     <div class="card">
       <h3>Hello</h3>
-      <p>(General Greeting)</p>
+      <p class="translation">سلام</p>
       <button class="listen-btn" onclick="speak('Hello')">🔊 Listen</button>
     </div>
-
     <div class="card">
       <h3>Good morning</h3>
-      <p>(Used before 12 PM)</p>
+      <p class="translation">سهار پخیر</p>
       <button class="listen-btn" onclick="speak('Good morning')">🔊 Listen</button>
     </div>
-
     <div class="card">
       <h3>Thank you</h3>
-      <p>(Showing gratitude)</p>
+      <p class="translation">مننه</p>
       <button class="listen-btn" onclick="speak('Thank you')">🔊 Listen</button>
     </div>
+
+    <!-- LESSON 2 -->
+    <h2 id="lesson2">Lesson 2: Numbers (1 - 5)</h2>
+    <p class="subtext">شمېرې</p>
+
+    <div class="card">
+      <h3>One</h3>
+      <p class="translation">یو</p>
+      <button class="listen-btn" onclick="speak('One')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Two</h3>
+      <p class="translation">دوه</p>
+      <button class="listen-btn" onclick="speak('Two')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Three</h3>
+      <p class="translation">درې</p>
+      <button class="listen-btn" onclick="speak('Three')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Four</h3>
+      <p class="translation">څلور</p>
+      <button class="listen-btn" onclick="speak('Four')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Five</h3>
+      <p class="translation">پينځه</p>
+      <button class="listen-btn" onclick="speak('Five')">🔊 Listen</button>
+    </div>
+
+    <!-- LESSON 3 -->
+    <h2 id="lesson3">Lesson 3: Family Members</h2>
+    <p class="subtext">د کورنۍ غړي</p>
+
+    <div class="card">
+      <h3>Father</h3>
+      <p class="translation">پلار</p>
+      <button class="listen-btn" onclick="speak('Father')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Mother</h3>
+      <p class="translation">مور</p>
+      <button class="listen-btn" onclick="speak('Mother')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Brother</h3>
+      <p class="translation">ورور</p>
+      <button class="listen-btn" onclick="speak('Brother')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Sister</h3>
+      <p class="translation">خور</p>
+      <button class="listen-btn" onclick="speak('Sister')">🔊 Listen</button>
+    </div>
+
+    <!-- LESSON 4 -->
+    <h2 id="lesson4">Lesson 4: Colors</h2>
+    <p class="subtext">رنګونه</p>
+
+    <div class="card">
+      <h3>Red</h3>
+      <p class="translation">سور</p>
+      <button class="listen-btn" onclick="speak('Red')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Blue</h3>
+      <p class="translation">شين</p>
+      <button class="listen-btn" onclick="speak('Blue')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Green</h3>
+      <p class="translation">زرغون</p>
+      <button class="listen-btn" onclick="speak('Green')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>White</h3>
+      <p class="translation">سپين</p>
+      <button class="listen-btn" onclick="speak('White')">🔊 Listen</button>
+    </div>
+
+    <!-- LESSON 5 -->
+    <h2 id="lesson5">Lesson 5: Food & Water</h2>
+    <p class="subtext">خواړه او اوبه</p>
+
+    <div class="card">
+      <h3>Water</h3>
+      <p class="translation">اوبه</p>
+      <button class="listen-btn" onclick="speak('Water')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Bread</h3>
+      <p class="translation">ډوډۍ</p>
+      <button class="listen-btn" onclick="speak('Bread')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Tea</h3>
+      <p class="translation">چای</p>
+      <button class="listen-btn" onclick="speak('Tea')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Food</h3>
+      <p class="translation">خواړه</p>
+      <button class="listen-btn" onclick="speak('Food')">🔊 Listen</button>
+    </div>
+
+    <!-- LESSON 6 -->
+    <h2 id="lesson6">Lesson 6: Common Questions</h2>
+    <p class="subtext">عامې پوښتنې</p>
+
+    <div class="card">
+      <h3>How are you?</h3>
+      <p class="translation">څنګه یاست؟</p>
+      <button class="listen-btn" onclick="speak('How are you?')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>What is your name?</h3>
+      <p class="translation">ستاسو نوم څه دی؟</p>
+      <button class="listen-btn" onclick="speak('What is your name?')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Where are you from?</h3>
+      <p class="translation">تاسو د کوم ځای یاست؟</p>
+      <button class="listen-btn" onclick="speak('Where are you from?')">🔊 Listen</button>
+    </div>
+
+    <!-- LESSON 7 -->
+    <h2 id="lesson7">Lesson 7: Time & Days</h2>
+    <p class="subtext">وخت او ورځې</p>
+
+    <div class="card">
+      <h3>Today</h3>
+      <p class="translation">نن</p>
+      <button class="listen-btn" onclick="speak('Today')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Tomorrow</h3>
+      <p class="translation">سبا</p>
+      <button class="listen-btn" onclick="speak('Tomorrow')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Monday</h3>
+      <p class="translation">دوشنبه</p>
+      <button class="listen-btn" onclick="speak('Monday')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Friday</h3>
+      <p class="translation">جمعه</p>
+      <button class="listen-btn" onclick="speak('Friday')">🔊 Listen</button>
+    </div>
+
+    <!-- LESSON 8 -->
+    <h2 id="lesson8">Lesson 8: Body Parts</h2>
+    <p class="subtext">د بدن غړي</p>
+
+    <div class="card">
+      <h3>Head</h3>
+      <p class="translation">سر</p>
+      <button class="listen-btn" onclick="speak('Head')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Eye</h3>
+      <p class="translation">سترګه</p>
+      <button class="listen-btn" onclick="speak('Eye')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Hand</h3>
+      <p class="translation">لاس</p>
+      <button class="listen-btn" onclick="speak('Hand')">🔊 Listen</button>
+    </div>
+
+    <!-- LESSON 9 -->
+    <h2 id="lesson9">Lesson 9: Common Places</h2>
+    <p class="subtext">عام ځایونه</p>
+
+    <div class="card">
+      <h3>Home</h3>
+      <p class="translation">کور</p>
+      <button class="listen-btn" onclick="speak('Home')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>School</h3>
+      <p class="translation">ښوونځی</p>
+      <button class="listen-btn" onclick="speak('School')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Hospital</h3>
+      <p class="translation">روغتون</p>
+      <button class="listen-btn" onclick="speak('Hospital')">🔊 Listen</button>
+    </div>
+
+    <!-- LESSON 10 -->
+    <h2 id="lesson10">Lesson 10: Basic Action Verbs</h2>
+    <p class="subtext">لومړني افعال</p>
+
+    <div class="card">
+      <h3>Eat</h3>
+      <p class="translation">خوړل</p>
+      <button class="listen-btn" onclick="speak('Eat')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Drink</h3>
+      <p class="translation">څښل</p>
+      <button class="listen-btn" onclick="speak('Drink')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Sleep</h3>
+      <p class="translation">وېده کېدل</p>
+      <button class="listen-btn" onclick="speak('Sleep')">🔊 Listen</button>
+    </div>
+    <div class="card">
+      <h3>Go</h3>
+      <p class="translation">تلل</p>
+      <button class="listen-btn" onclick="speak('Go')">🔊 Listen</button>
+    </div>
+
   </div>
 
   <script>
+    let voices = [];
+    function loadVoices() {
+      voices = window.speechSynthesis.getVoices();
+    }
+    if ('speechSynthesis' in window) {
+      loadVoices();
+      window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+
     function speak(text) {
       if ('speechSynthesis' in window) {
         window.speechSynthesis.cancel();
+        
         const utterance = new SpeechSynthesisUtterance(text);
-        utterance.lang = 'en-GB';
+        utterance.rate = 0.85;
+        
+        const englishVoice = voices.find(v => v.lang.includes('en'));
+        if (englishVoice) {
+          utterance.voice = englishVoice;
+        } else {
+          utterance.lang = 'en-GB';
+        }
+
         window.speechSynthesis.speak(utterance);
       } else {
-        alert('Audio speech is not supported on this browser.');
+        alert('Browser speech unavailable.');
       }
     }
   </script>
